@@ -31,7 +31,11 @@ public class ProdutoDao implements Dao<Produto>{
             "INSERT INTO produto (nome, descricao, preco, marca, categoria, foto)"
             + " VALUES (?,?,?,?,?,?)");
         stmt.setString(1, obj.getNome());
-        
+        stmt.setString(2, obj.getDescrição());
+        stmt.setDouble(3, obj.getPreco());
+        stmt.setString(4, obj.getMarca());
+        stmt.setString(5, obj.getCategoria());
+        stmt.setString(6, obj.getFoto());
         
         stmt.executeUpdate();
         stmt.close();
@@ -49,8 +53,14 @@ public class ProdutoDao implements Dao<Produto>{
     @Override
     public void update(Produto obj)throws SQLException {
         PreparedStatement stmt = con.prepareStatement(
-                "UPDATE produto SET nome=?, descricao=?, marca=?, categoria=?, preco=?, foto=? WHERE id=?");
+                "UPDATE produto SET nome=?, descricao=?, preco=?, marca=?, categoria=?,  foto=? WHERE id=?");
         stmt.setString(1, obj.getNome());
+        stmt.setString(2, obj.getDescrição());
+        stmt.setDouble(3, obj.getPreco());
+        stmt.setString(4, obj.getMarca());
+        stmt.setString(5, obj.getCategoria());
+        stmt.setString(6, obj.getFoto());
+        stmt.setInt(7, obj.getId());
         
         stmt.executeUpdate();
         stmt.close();
@@ -68,6 +78,12 @@ public class ProdutoDao implements Dao<Produto>{
             
             prod = new Produto();
             prod.setId(rs.getInt("id"));
+            prod.setNome(rs.getString("nome"));
+            prod.setDescrição(rs.getString("descricao"));
+            prod.setPreco(rs.getDouble("preco"));
+            prod.setMarca(rs.getString("marca"));
+            prod.setCategoria(rs.getString("categoria"));
+            prod.setFoto(rs.getString("foto"));
             
         }
         stmt.close();
@@ -86,6 +102,12 @@ public class ProdutoDao implements Dao<Produto>{
             
             prod = new Produto();
             prod.setId(rs.getInt("id"));
+            prod.setNome(rs.getString("nome"));
+            prod.setDescrição(rs.getString("descricao"));
+            prod.setPreco(rs.getDouble("preco"));
+            prod.setMarca(rs.getString("marca"));
+            prod.setCategoria(rs.getString("categoria"));
+            prod.setFoto(rs.getString("foto"));
             
             produtos.add(prod);
             
