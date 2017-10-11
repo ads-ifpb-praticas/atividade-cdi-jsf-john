@@ -12,6 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.List;
+import javax.inject.Inject;
 
 /**
  *
@@ -66,6 +67,7 @@ public class ProdutoDao implements Dao<Produto>{
         stmt.close();
     }
 
+    @Inject
     @Override
     public Produto get(int key)throws SQLException {
         Produto prod = null;
@@ -76,7 +78,6 @@ public class ProdutoDao implements Dao<Produto>{
 
         if (rs.next()){
             
-            prod = new Produto();
             prod.setId(rs.getInt("id"));
             prod.setNome(rs.getString("nome"));
             prod.setDescrição(rs.getString("descricao"));
@@ -90,6 +91,7 @@ public class ProdutoDao implements Dao<Produto>{
         return prod;
     }
 
+    @Inject
     @Override
     public List<Produto> list()throws SQLException {
         List<Produto> produtos = new LinkedList<>();
@@ -97,7 +99,7 @@ public class ProdutoDao implements Dao<Produto>{
                 "SELECT * FROM produto");
         
         ResultSet rs = stmt.executeQuery();
-        Produto prod =null;
+        Produto prod;
         while (rs.next()){
             
             prod = new Produto();

@@ -1,0 +1,10 @@
+ifpb/ads/atividade/cdi/jsf/john/beans/Marca.class
+ifpb/ads/atividade/cdi/jsf/john/daos/Conexao.class
+ifpb/ads/atividade/cdi/jsf/john/daos/ProdutoDao.class
+ifpb/ads/atividade/cdi/jsf/john/daos/MarcaDao.class
+ifpb/ads/atividade/cdi/jsf/john/controle/ControleCategoriaMarca.class
+ifpb/ads/atividade/cdi/jsf/john/daos/Dao.class
+ifpb/ads/atividade/cdi/jsf/john/controle/ControleProduto.class
+ifpb/ads/atividade/cdi/jsf/john/beans/Produto.class
+ifpb/ads/atividade/cdi/jsf/john/beans/Categoria.class
+ifpb/ads/atividade/cdi/jsf/john/daos/CategoriaDao.class

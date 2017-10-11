@@ -13,9 +13,15 @@ and open the template in the editor.
 }
 
 body{
-    background-color: #e4b9b9;
+    background-color: #31b0d5;
 }
 
+.cadastro{
+    background-color: #fff;
+    width: 90%;
+    max-width: 90%;
+    border-radius: 5px;
+}
 
 bottom{
     background-color: #e4b9c0;

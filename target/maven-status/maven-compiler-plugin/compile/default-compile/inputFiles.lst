@@ -1,0 +1,10 @@
+/home/recursive/praticas/atividade-cdi-jsf-john/src/main/java/ifpb/ads/atividade/cdi/jsf/john/beans/Produto.java
+/home/recursive/praticas/atividade-cdi-jsf-john/src/main/java/ifpb/ads/atividade/cdi/jsf/john/daos/Conexao.java
+/home/recursive/praticas/atividade-cdi-jsf-john/src/main/java/ifpb/ads/atividade/cdi/jsf/john/daos/CategoriaDao.java
+/home/recursive/praticas/atividade-cdi-jsf-john/src/main/java/ifpb/ads/atividade/cdi/jsf/john/daos/Dao.java
+/home/recursive/praticas/atividade-cdi-jsf-john/src/main/java/ifpb/ads/atividade/cdi/jsf/john/daos/MarcaDao.java
+/home/recursive/praticas/atividade-cdi-jsf-john/src/main/java/ifpb/ads/atividade/cdi/jsf/john/daos/ProdutoDao.java
+/home/recursive/praticas/atividade-cdi-jsf-john/src/main/java/ifpb/ads/atividade/cdi/jsf/john/controle/ControleProduto.java
+/home/recursive/praticas/atividade-cdi-jsf-john/src/main/java/ifpb/ads/atividade/cdi/jsf/john/controle/ControleCategoriaMarca.java
+/home/recursive/praticas/atividade-cdi-jsf-john/src/main/java/ifpb/ads/atividade/cdi/jsf/john/beans/Categoria.java
+/home/recursive/praticas/atividade-cdi-jsf-john/src/main/java/ifpb/ads/atividade/cdi/jsf/john/beans/Marca.java
