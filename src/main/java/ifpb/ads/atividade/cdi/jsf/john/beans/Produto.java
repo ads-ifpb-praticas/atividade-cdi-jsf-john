@@ -5,10 +5,13 @@
  */
 package ifpb.ads.atividade.cdi.jsf.john.beans;
 
+import javax.inject.Named;
+
 /**
  *
  * @author recursive
  */
+@Named
 public class Produto {
     
     private int id;

@@ -10,7 +10,7 @@ import java.util.List;
 import javax.inject.Inject;
 import ifpb.ads.atividade.cdi.jsf.john.daos.ProdutoDao;
 import java.sql.SQLException;
-import javax.faces.bean.ApplicationScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 /**
  *
@@ -18,13 +18,15 @@ import javax.inject.Named;
  */
 
 @Named
-@ApplicationScoped
+@RequestScoped
 public class ControleProduto {
     
     @Inject
     private ProdutoDao dao;
     @Inject
     private ControleCategoriaMarca ccm;
+    @Inject
+    private Produto produto;
     
     public List<Produto> getProdutos() throws SQLException {
         List<Produto> produtos = dao.list();
@@ -49,6 +51,14 @@ public class ControleProduto {
 
     public void setCcm(ControleCategoriaMarca ccm) {
         this.ccm = ccm;
+    }
+
+    public Produto getProduto() {
+        return produto;
+    }
+
+    public void setProduto(Produto produto) {
+        this.produto = produto;
     }
 
 }
